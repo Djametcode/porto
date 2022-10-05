@@ -279,7 +279,8 @@ article {
         top: 10px;
         left: 10px;
         font-size: 45px;
-        transition: 3s;
+        transition: 5s;
+        animation-direction: alternate;
     }
     .project-img {
         scale: 0.9;
