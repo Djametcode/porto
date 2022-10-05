@@ -186,18 +186,24 @@ article {
     }
     .text1 {
         position: relative;
-        overflow: visible;
         color: aqua;
+        z-index: 2;
+    }
+    #intro::after {
+        position: relative;
+        content: 'Welcome to my portofolio';
+        color: aqua;
+        z-index: 2;
     }
     .intro-img {
         position: absolute;
         bottom: 0;
         right: 50px;
-        transform: translate3d(180px, 125px, 0px) ;
+        transform: translate3d(150px, 135px, 0px) ;
         z-index: 1;
         background-color: whitesmoke;
-        border-top-left-radius: 95%;
-        width: 360px;
+        border-top-left-radius: 150%;
+        width: 340px;
         border: none;
     }
     .welcome-text {
