@@ -22,17 +22,15 @@ body {
 header {
     background-color: whitesmoke;
     padding: 10px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 2;
-    overflow: visible;
 }
 #heading {
     display: flex;
     flex-direction: row;
-    position: relative;
-
     z-index: 2;
+    position: sticky;
+    top: 0;
 }
 .welcome-text {
     padding-left: 20px;
@@ -137,7 +135,6 @@ article {
     flex-direction: row;
     gap: 20px;
     animation: alternate project 2s;
-    position: relative;
     z-index: 2;
 }
 
