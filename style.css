@@ -7,23 +7,15 @@ body {
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
-.design1 {
-    background-color: white;
-    height: 700px;
-    width: 700px;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    border-top-left-radius: 65%;
-    transform: translate(265px);
-    z-index: 1;
-    border-bottom-left-radius: 65%;
+.hamburger {
+    display: none;
 }
 header {
     background-color: whitesmoke;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     top: 0;
+    z-index: 3;
 }
 #heading {
     display: flex;
@@ -192,7 +184,6 @@ article {
     background-size: cover;
     position: relative;
     z-index: 2;
-    scale: 0.9;
 }
 .project2-img {
     max-width: 100%;
@@ -200,7 +191,6 @@ article {
     background-size: cover;
     position: relative;
     z-index: 2;
-    scale: 0.8;
 }
 
 
@@ -268,14 +258,27 @@ article {
     }
     .design {
         background-color: black;
-        height: 520px;
+        height: 600px;
         width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
         transform: rotate(75deg);
-        border-top-right-radius: 80%;
+        border-top-right-radius: 99%;
         transform: translateY(5px);
         z-index: 1;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        font-size: 45px;
+    }
+    .project-img {
+        scale: 0.9;
+    }
+    .project2-img {
+        scale: 0.9;
     }
 }
