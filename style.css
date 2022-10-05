@@ -7,18 +7,32 @@ body {
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
-
+.design1 {
+    background-color: white;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    border-top-left-radius: 65%;
+    transform: translate(265px);
+    z-index: 1;
+    border-bottom-left-radius: 65%;
+}
 header {
     background-color: whitesmoke;
     padding: 10px;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 2;
+    overflow: visible;
 }
 #heading {
     display: flex;
     flex-direction: row;
     position: relative;
+
+    z-index: 2;
 }
 .welcome-text {
     padding-left: 20px;
@@ -55,8 +69,6 @@ section {
     background-color: whitesmoke;
     z-index: 2;
 }
-.text1 {
-}
 #intro {
     border-radius: 20px;
     background-color: black;
@@ -75,8 +87,10 @@ section {
     position: absolute;
     bottom: 0;
     right: 50px;
-    transform: translate3d(100px, 175px, 0px) ;
+    transform: translate3d(220px, 220px, 0px) ;
     z-index: 1;
+    background-color: #F9F9F9;
+    border-radius: 75%;
 
 }
 #intro:hover {
@@ -109,7 +123,7 @@ article {
     font-size: 20px;
     border-radius: 20px;
     animation: alternate texts 2s;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes texts {
@@ -123,7 +137,10 @@ article {
     flex-direction: row;
     gap: 20px;
     animation: alternate project 2s;
+    position: relative;
+    z-index: 2;
 }
+
 @keyframes project {
     0% {margin-left: -300px; width: 25%;}
     50% {width: 50%;}
@@ -143,13 +160,30 @@ article {
 }
 
 #bookManager {
-    background-color: whitesmoke;
+    background-color: slateblue;
     color: black;
     padding: 20px;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.design {
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(75deg);
+    border-top-right-radius: 80%;
+    transform: translateY(5px);
+    z-index: 1;
 }
 .project-text {
-    font-size: 20px;
+    font-size: 18px;
+    position: relative;
+    color: white;
+    z-index: 2;
 }
 .project-text a {
     text-decoration: none;
@@ -158,11 +192,25 @@ article {
 .project-img {
     max-width: 100%;
     border-radius: 20px;
-    background-size: cover
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    scale: 0.9;
+}
+.project2-img {
+    max-width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    scale: 0.8;
 }
 
+
 #whatsappClone {
-    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+    background-color: slateblue;
     color: black;
     padding: 20px;
     border-radius: 20px;
@@ -211,11 +259,26 @@ article {
     }
     header {
         background-color: black;
+        position: sticky;
+        top: 0;
+        z-index: 3;
     }
     #heading {
         flex-direction: column;
 
         border-radius: 20px;
         color: white;
+    }
+    .design {
+        background-color: black;
+        height: 520px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(75deg);
+        border-top-right-radius: 80%;
+        transform: translateY(5px);
+        z-index: 1;
     }
 }
