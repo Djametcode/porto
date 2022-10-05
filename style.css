@@ -53,6 +53,7 @@ header {
 section {
     padding: 20px;
     background-color: whitesmoke;
+    z-index: 2;
 }
 #intro {
     border-radius: 20px;
@@ -60,14 +61,18 @@ section {
     padding: 20px;
     color: white;
     height: 200px;
-    animation: alternate text 4s infinite;
+    animation: alternate text 2s;
     z-index: 1;
     max-width: 100%;
 }
+#intro:hover {
+    background-color: black;
+    box-shadow: 5px 5px 10px grey;
+}
 @keyframes text {
-    0% { text-align: center; width: 25%;}
-    50% { text-align: center; width: 50%;}
-    100% {width: 95%; text-align: center;}
+    0% { text-align: left; transform: translateY(-300px); width: 25%;}
+    50% { text-align: left; width: 50%;}
+    100% {width: 95%; text-align: left;}
 }
 #intro::after {
     content: 'Welcome to my portofolio';
@@ -78,6 +83,9 @@ article {
 #project {
     background-color: slategrey;
     padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .text {
     background-color: slateblue;
@@ -86,13 +94,38 @@ article {
     color: white;
     font-size: 20px;
     border-radius: 20px;
-    animation: alternate texts 4s infinite;
+    animation: alternate texts 2s;
+    z-index: 2;
 }
 
 @keyframes texts {
     0% { text-align: center; width: 25%;}
     50% { text-align: center; width: 50%;}
     100% {width: 95%; text-align: center;}
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: alternate project 1s;
+}
+@keyframes project {
+    0% {margin-left: -300px;width: 25%;}
+    50% {width: 50%;}
+    100% {width: 100%;}
+}
+#flex-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    animation: alternate project 1s;
+}
+@keyframes project {
+    0% {margin-left: -300px;width: 25%;}
+    50% {width: 50%;}
+    100% {width: 100%;}
 }
 
 #bookManager {
@@ -102,7 +135,7 @@ article {
     border-radius: 20px;
 }
 .project-text {
-    font-size: 25px;
+    font-size: 20px;
 }
 .project-text a {
     text-decoration: none;
@@ -110,6 +143,13 @@ article {
 }
 .project-img {
     max-width: 100%;
-    padding: 30px;
+    border-radius: 20px;
     background-size: cover
+}
+
+#whatsappClone {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
 }
