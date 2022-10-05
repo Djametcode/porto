@@ -59,7 +59,7 @@ section {
 }
 #intro {
     border-radius: 20px;
-    background-color: slateblue;
+    background-color: black;
     padding: 20px;
     color: white;
     height: 200px;
@@ -69,6 +69,7 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 2;
+    box-shadow: 5px 5px 10px grey;
 }
 .intro-img {
     position: absolute;
@@ -79,7 +80,7 @@ section {
 
 }
 #intro:hover {
-    background-color: black;
+    background-color: slateblue;
     box-shadow: 5px 5px 10px grey;
 }
 @keyframes text {
@@ -192,11 +193,23 @@ article {
         position: absolute;
         bottom: 0;
         right: 50px;
-        transform: translate3d(180px, 175px, 0px) ;
+        transform: translate3d(180px, 125px, 0px) ;
         z-index: 1;
         background-color: whitesmoke;
-        border-top-left-radius: 75%;
-        width: 420px;
+        border-top-left-radius: 95%;
+        width: 360px;
         border: none;
+    }
+    .welcome-text {
+        text-align: center;
+    }
+    header {
+        background-color: black;
+    }
+    #heading {
+        flex-direction: column;
+
+        border-radius: 20px;
+        color: white;
     }
 }
