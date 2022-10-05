@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+body {
+    margin: 0;
+}
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#heading {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.welcome-text {
+    padding-left: 20px;
+}
+#nav {
+    position: absolute;
+    right: 0px;
+    margin: 0;
+}
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+}
+#nav li {
+    margin: 0;
+    padding: 0;
+}
+#nav a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 25px;
+    font-size: 20px;
+}
+#nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+section {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+#intro {
+    border-radius: 20px;
+    background-color: slateblue;
+    padding: 20px;
+    color: white;
+    height: 200px;
+    animation: alternate text 4s infinite;
+    z-index: 1;
+    max-width: 100%;
+}
+@keyframes text {
+    0% { text-align: center; width: 25%;}
+    50% { text-align: center; width: 50%;}
+    100% {width: 95%; text-align: center;}
+}
+#intro::after {
+    content: 'Welcome to my portofolio';
+}
+article {
+    color: white;
+}
+#project {
+    background-color: slategrey;
+    padding: 20px;
+}
+.text {
+    background-color: slateblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    animation: alternate texts 4s infinite;
+}
+
+@keyframes texts {
+    0% { text-align: center; width: 25%;}
+    50% { text-align: center; width: 50%;}
+    100% {width: 95%; text-align: center;}
+}
+
+#bookManager {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.project-text {
+    font-size: 25px;
+}
+.project-text a {
+    text-decoration: none;
+    color: slateblue;
+}
+.project-img {
+    max-width: 100%;
+    padding: 30px;
+    background-size: cover
+}
