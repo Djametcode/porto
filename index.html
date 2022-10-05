@@ -13,7 +13,15 @@
             <div class="welcome-text">
                 <h1>DjametCoder</h1>
             </div>
-            <span class="hamburger">&#9776;</span>
+            <span class="hamburger" onclick="openSidebar()">&#9776;</span>
+            <div id="sidebar">
+                <ul>
+                    <span class="x-css" id="x-btn" onclick="closeSidebar()">&#10005;</span>
+                    <li><a href="#heading">Home</a></li>
+                    <li><a href="#" onclick="darkMode()">Github</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
             <div id="nav">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -30,8 +38,7 @@
                     <h2 class="text1">Hi i am Tofik Hidayat</h2>
                 <p class="text1">Website Developer</p>
                 <img src="asset/unknown-removebg-preview.png" alt="img" class="intro-img">
-                </div>
-                
+                </div> 
             </div>
         </section>
         <article>
@@ -65,5 +72,6 @@
             </div>
         </article>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

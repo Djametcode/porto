@@ -202,7 +202,12 @@ article {
     padding: 20px;
     border-radius: 20px;
 }
-
+#sidebar {
+    visibility: hidden;
+}
+.x-css {
+    visibility: hidden;
+}
 @media screen and (max-width: 500px)  {
     #flex-container {
         display: flex;
@@ -271,14 +276,56 @@ article {
     .hamburger {
         display: block;
         position: absolute;
-        top: 15px;
+        top: 10px;
         left: 10px;
         font-size: 45px;
+        transition: 3s;
     }
     .project-img {
         scale: 0.9;
     }
     .project2-img {
         scale: 0.9;
+    }
+    #sidebar {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    #sidebar ul {
+        list-style-type: none;
+    }
+    #sidebar li {
+        margin: 0;
+    }
+    #sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+    }
+    #sidebar a:hover {
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        width: 75%;
+    }
+    .x-css {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .x-css:hover {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
     }
 }
