@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    scroll-behavior: smooth;
 }
 * {
     font-family: 'Josefin Sans', sans-serif;
@@ -88,7 +89,7 @@ section {
     box-shadow: 5px 5px 10px grey;
 }
 @keyframes text {
-    0% { text-align: left; transform: translateY(-300px); width: 25%;}
+    0% { text-align: left; transform: translatey(-300px); width: 25%;}
     50% { text-align: left; width: 50%;}
     100% {width: 95%; text-align: left;}
 }
@@ -218,13 +219,14 @@ article {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        animation: alternate project 1s;
+        animation: alternate project 2s;
+
     }
     #flex-container2 {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        animation: alternate project 1s;
+        animation: alternate project 2s;
     }
     #nav {
         display: none;
@@ -312,6 +314,7 @@ article {
         text-decoration: none;
         display: block;
         padding: 20px;
+        font-size: 20px;
     }
     #sidebar a:hover {
         background-color: white;
@@ -331,5 +334,11 @@ article {
         background-color: white;
         color: black;
         border-radius: 10px;
+    }
+    #bookManager {
+        width: auto;
+    }
+    #whatsappClone {
+        width: auto;
     }
 }
