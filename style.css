@@ -5,6 +5,9 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
+main {
+    overflow-y: hidden;
+}
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -60,6 +63,27 @@ section {
     background-color: whitesmoke;
     z-index: 2;
 }
+#flex-container0 {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 50px;
+    width: 100vh;
+    animation: linear pameran 5s;
+    animation-delay: 7s;
+}
+
+@keyframes pameran {
+    0% {}
+    25% {margin-left: -50vh;}
+    50% {margin-left: -25vh;}
+    100% {margin-left: 0;}
+}
+
+.text1 {
+    position: relative;
+    z-index: 2;
+}
 #intro {
     border-radius: 20px;
     background-color: black;
@@ -68,11 +92,25 @@ section {
     height: 200px;
     animation: alternate text 2s;
     z-index: 2;
-    max-width: 100%;
     position: relative;
     overflow: hidden;
     z-index: 2;
     box-shadow: 5px 5px 10px grey;
+    width: 50vh;
+}
+#intro2 {
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    height: 200px;
+    animation: alternate text 2s;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 5px 5px 10px grey;
+    width: 50vh;
 }
 .intro-img {
     position: absolute;
@@ -81,6 +119,15 @@ section {
     transform: translate3d(220px, 220px, 0px) ;
     z-index: 1;
     background-color: slategray;
+    border-radius: 75%;
+
+}
+.intro-img2 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    transform: translate3d(220px, 220px, 0px) ;
+    z-index: 1;
     border-radius: 75%;
 
 }
@@ -95,6 +142,8 @@ section {
 }
 #intro::after {
     content: 'Welcome to my portofolio';
+    position: relative;
+    z-index: 2;
 }
 article {
     color: white;
@@ -214,7 +263,21 @@ article {
 .x-css {
     visibility: hidden;
 }
+
+
 @media screen and (max-width: 500px)  {
+    section {
+        overflow-x: scroll;
+    }
+    #intro {
+        width: 340px;
+    }
+    #intro2 {
+        width: 340px;
+    }
+    #flex-container0 {
+        width: 80vh;
+    }
     #flex-container {
         display: flex;
         flex-direction: column;
