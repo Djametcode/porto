@@ -299,6 +299,9 @@ article {
         color: aqua;
         z-index: 2;
     }
+    .text2 {
+        color: white;
+    }
     #intro::after {
         position: relative;
         content: 'Welcome to my portofolio';
