@@ -27,6 +27,12 @@ function closeSidebar() {
 }
 
 function darkMode() {
+    const intro = document.getElementById('intro');
+    intro.style.boxShadow = 'none';
+    const ele = document.querySelector('section');
+    ele.style.backgroundColor = 'black';
+    const project = document.getElementById('project');
+    project.style.backgroundColor = 'black';
     const element  = document.getElementById('sidebar');
     element.style.visibility = 'hidden';
     const element2 = document.getElementById('x-btn');

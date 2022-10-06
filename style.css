@@ -8,9 +8,13 @@ body {
 main {
     overflow-x: hidden;
 }
+section {
+    overflow-x: scroll;
+}
 * {
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .hamburger {
     display: none;
 }
@@ -68,15 +72,15 @@ section {
     flex-direction: row;
     width: auto;
     gap: 30px;
-    width: 100vh;
+    width: 250vh;
     animation: linear pameran 5s;
     animation-delay: 7s;
 }
 
 @keyframes pameran {
     0% {}
-    25% {margin-left: -50vh;}
-    50% {margin-left: -25vh;}
+    25% {margin-left: -100vh;}
+    50% {margin-left: -50vh;}
     100% {margin-left: 0;}
 }
 
@@ -272,7 +276,7 @@ article {
     border-radius: 10px;
     position: absolute;
     left: 55px;
-   top: 15px;
+   top: 25px;
 }
 
 @media screen and (max-width: 500px)  {
@@ -285,8 +289,12 @@ article {
     #intro2 {
         width: 340px;
     }
+    #intro2:hover {
+        background-color: aqua;
+        color: black;
+    }
     #flex-container0 {
-        width: 90vh;
+        width: 200vh;
     }
     #flex-container {
         display: flex;
@@ -306,16 +314,16 @@ article {
     }
     .text1 {
         position: relative;
-        color: aqua;
+        color: white;
         z-index: 2;
     }
-    .text2 {
+   .wrapper {
         color: white;
-    }
+   }
     #intro::after {
         position: relative;
         content: 'Welcome to my portofolio';
-        color: aqua;
+        color: white;
         z-index: 2;
     }
     .intro-img {
@@ -324,7 +332,7 @@ article {
         right: 50px;
         transform: translate3d(150px, 135px, 0px) ;
         z-index: 1;
-        background-color: whitesmoke;
+        background-color: slategrey;
         border-top-left-radius: 150%;
         width: 340px;
         border: none;
@@ -374,7 +382,7 @@ article {
         position: fixed;
         top: 0;
         left: 0;
-        padding-top: 50px;
+        padding-top: 100px;
         background-color: black;
         width: 100%;
         height: 100%;
