@@ -259,6 +259,10 @@ article {
 #sidebar {
     visibility: hidden;
 }
+#profile {
+    visibility: hidden;
+    display: none;
+}
 .x-css {
     visibility: hidden;
 }
@@ -440,6 +444,7 @@ article {
         text-align: center;
         width: 325px;
         border-radius: 20px;
+        display: contents;
     }
     #img-profile {
         background-color: slategrey;
