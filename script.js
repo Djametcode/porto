@@ -29,6 +29,24 @@ function closeSidebar() {
 function darkMode() {
     const intro = document.getElementById('intro');
     intro.style.boxShadow = 'none';
+    const intro2 = document.getElementsByClassName('intro2');
+    for( let i = 0; i < intro2.length; i++) {
+        intro2[i].style.backgroundColor = 'slateBlue';
+        intro2[i].style.color = 'white';
+        intro2[i].style.boxShadow = 'none';
+    }
+
+    const design = document.getElementsByClassName('design');
+    for ( let i = 0; i < design.length; i++ ) {
+        design[i].style.backgroundColor = 'white';
+    }
+
+    const text = document.getElementsByClassName('project-text');
+    for ( let i = 0; i < text.length; i++ ) {
+        text[i].style.color = 'black';
+    }
+
+
     const ele = document.querySelector('section');
     ele.style.backgroundColor = 'black';
     const project = document.getElementById('project');
