@@ -264,6 +264,16 @@ article {
     visibility: hidden;
 }
 
+#clock {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 55px;
+   top: 15px;
+}
 
 @media screen and (max-width: 500px)  {
     section {

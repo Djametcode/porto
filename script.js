@@ -4,7 +4,20 @@ function openSidebar() {
 
     const element2 = document.getElementById('x-btn');
     element2.style.visibility = 'visible';
+
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        document.getElementById('clock').innerHTML =  h + ":" + m;
+        setTimeout(10);
+     
 }
+
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
 
 function closeSidebar() {
     const element  = document.getElementById('sidebar');
