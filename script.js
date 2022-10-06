@@ -58,4 +58,6 @@ function darkMode() {
     element.style.visibility = 'hidden';
     const element2 = document.getElementById('x-btn');
     element2.style.visibility = 'hidden';
+    const element3 = document.getElementById('profile');
+    element3.style.visibility = 'hidden'
 }
