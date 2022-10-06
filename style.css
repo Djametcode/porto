@@ -67,7 +67,7 @@ section {
     display: flex;
     flex-direction: row;
     width: auto;
-    gap: 50px;
+    gap: 30px;
     width: 100vh;
     animation: linear pameran 5s;
     animation-delay: 7s;
