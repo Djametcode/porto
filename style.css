@@ -451,12 +451,13 @@ article {
         width: 170px;
         height: 170px;
         position: relative;
-        background-image: url('asset/unknown-removebg-preview.png');
-        background-size: 400px;
+        background-image: url('asset/photo_6334388777014899682_x.jpg');
+        background-size: 325px;
         background-position: center;
-        background-position-y: -40px;
+        background-position-x: -85px;
         border-radius: 95%;
-        transform: translateX(37%);
+        transform: translateX(50%);
+        background-repeat: no-repeat;
     }
     #intro-sidebar {
         background-color: slategrey;
